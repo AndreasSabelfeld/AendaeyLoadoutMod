@@ -1,0 +1,83 @@
+FrameWidgetClass rootFrame {
+ visible 1
+ ignorepointer 0
+ position 0 0
+ size 0.85 0.8
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ priority 998
+ {
+  PanelWidgetClass PanelWidget0 {
+   visible 1
+   ignorepointer 0
+   color 0.12 0.14 0.18 0.95
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   style rover_sim_colorable
+   {
+    TextWidgetClass TextWidget0 {
+     visible 1
+     ignorepointer 1
+     position 0 20
+     size 1 50
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     priority 5
+     text "Select your Loadout"
+     font "gui/fonts/sdf_MetronBook24"
+     "exact text" 1
+     "exact text size" 28
+     "text halign" center
+     "text valign" center
+    }
+    ScrollWidgetClass ScrollWidget0 {
+     visible 1
+     disabled 0
+     ignorepointer 0
+     position 0 85
+     size 0.96 0.84
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 0
+     priority 10
+     clipchildren 1
+     "Scrollbar H" 0
+     "Scrollbar V" 1
+     {
+      WrapSpacerWidgetClass LoadoutContainer {
+       visible 1
+       ignorepointer 0
+       position 0 0
+       size 1 0
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       Padding 15
+       Margin 15
+       "Size To Content H" 0
+       "Size To Content V" 1
+       content_halign left
+       content_valign top
+      }
+     }
+    }
+   }
+  }
+ }
+}
