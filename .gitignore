@@ -1,0 +1,8 @@
+# DayZ / Enfusion / Tools Cache
+*.pbo
+*.bisign
+.DS_Store
+Thumbs.db
+*.log
+backup/
+.vscode/
